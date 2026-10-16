@@ -1,0 +1,4 @@
+import {isUnlocked} from './chapter-manager.js';
+import {esc,modal} from './ui.js';
+export function artifactDocument(a){return `<article class="artifact-document"><div class="artifact-doc-head"><img src="${esc(a.image)}" alt="Иллюстрация: ${esc(a.kind)}"><div><p class="eyebrow">${esc(a.chapter)}.EXE / ${esc(a.kind)}</p><h3>${esc(a.title)}</h3><small>${esc(a.date)}</small></div></div><p class="muted">${esc(a.description)}</p><pre>${esc(a.text)}</pre><p class="source">ИСТОЧНИК: ${esc(a.source)}</p></article>`;}
+export function openArtifacts(ids,artifacts,state){const found=ids.map(id=>artifacts.find(a=>a.id===id)).filter(a=>a&&isUnlocked(a,state));if(found.length)modal(found.length>1?'Сопоставление находок':found[0].title,`<div class="comparison ${found.length>1?'two':''}">${found.map(artifactDocument).join('')}</div>`);}

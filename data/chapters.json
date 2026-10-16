@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1999",
+    "number": "01",
+    "title": "1999.exe",
+    "subtitle": "Последняя ночь",
+    "year": "1999",
+    "status": "available",
+    "path": "chapters/1999/index.html",
+    "image": "assets/images/computer-1999.svg",
+    "description": "31 декабря 1999 года. Последний запуск неизвестного компьютера. Некоторые сообщения так и остались непрочитанными.",
+    "meta": "HOME OS 99 · 8.4 GB · ОБРАЗ ВОССТАНОВЛЕН",
+    "milestones": [
+      "letter",
+      "chat",
+      "rehearsal",
+      "archive",
+      "site",
+      "ending"
+    ]
+  },
+  {
+    "id": "2003",
+    "number": "02",
+    "title": "2003.exe",
+    "subtitle": "Неизвестный контакт",
+    "year": "2003",
+    "status": "available",
+    "image": "assets/images/computer-2003.svg",
+    "description": "Один пользователь исчез из сети. Но его сообщения продолжали приходить.",
+    "meta": "HOME CONNECT · ЛОКАЛЬНАЯ ИСТОРИЯ",
+    "path": "chapters/2003/index.html",
+    "milestones": [
+      "last_message",
+      "contact_found",
+      "queue_checked",
+      "transcript",
+      "decision",
+      "ending"
+    ]
+  },
+  {
+    "id": "2007",
+    "number": "03",
+    "title": "2007.exe",
+    "subtitle": "Удалённые файлы",
+    "year": "2007",
+    "status": "available",
+    "image": "assets/images/computer-2007.svg",
+    "description": "Кто-то попытался стереть прошлое. Но цифровые следы остались.",
+    "meta": "STUDIO / 07 · ВОССТАНОВЛЕНИЕ ДИСКА",
+    "path": "chapters/2007/index.html",
+    "milestones": [
+      "report",
+      "recovered",
+      "audit",
+      "vault",
+      "decision",
+      "ending"
+    ]
+  },
+  {
+    "id": "2026",
+    "number": "04",
+    "title": "2026.exe",
+    "subtitle": "Тот, кто сохранил",
+    "year": "2026",
+    "status": "available",
+    "image": "assets/images/computer-2026.svg",
+    "description": "Кто собрал эти истории — и зачем? Четвёртый образ хранит последний ответ.",
+    "meta": "ФИНАЛ · RECALL / 26",
+    "path": "chapters/2026/index.html",
+    "milestones": [
+      "header_fixed",
+      "sources_checked",
+      "chronology",
+      "curator",
+      "decision",
+      "ending"
+    ]
+  }
+]
