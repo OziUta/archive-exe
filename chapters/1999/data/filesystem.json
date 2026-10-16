@@ -1,0 +1,182 @@
+[
+  {
+    "path": "C:",
+    "type": "folder"
+  },
+  {
+    "path": "C:/SYSTEM",
+    "type": "folder"
+  },
+  {
+    "path": "C:/PROGRAMS",
+    "type": "folder"
+  },
+  {
+    "path": "C:/GAMES",
+    "type": "folder"
+  },
+  {
+    "path": "C:/DOCUMENTS",
+    "type": "folder"
+  },
+  {
+    "path": "C:/DOCUMENTS/SCHOOL",
+    "type": "folder"
+  },
+  {
+    "path": "C:/DOCUMENTS/PERSONAL",
+    "type": "folder"
+  },
+  {
+    "path": "C:/DOCUMENTS/ARCHIVE",
+    "type": "folder"
+  },
+  {
+    "path": "C:/PICTURES",
+    "type": "folder"
+  },
+  {
+    "path": "C:/MUSIC",
+    "type": "folder"
+  },
+  {
+    "path": "C:/DOWNLOADS",
+    "type": "folder"
+  },
+  {
+    "path": "C:/OLD_BACKUP",
+    "type": "folder"
+  },
+  {
+    "path": "C:/DOCUMENTS/PERSONAL/readme.txt",
+    "type": "text",
+    "text": "31 декабря.\n\nМеня зовут Лёша. Мне семнадцать, и я считаю, что если достаточно долго сидеть за компьютером, можно придумать решение вообще для всего.\n\nАня говорит, что это потому, что я пока никуда не уезжал.\n\nМы с Мишей делаем ей подарок. Не игру. Не открытку. Место, куда она сможет вернуться. Сегодня последняя попытка.\n\nЕсли я опять потеряю записку: удалённое не всегда исчезает. Корзина на рабочем столе.",
+    "event": "diary"
+  },
+  {
+    "path": "C:/DOCUMENTS/ARCHIVE/window.zip",
+    "type": "archive",
+    "text": ""
+  },
+  {
+    "path": "C:/DOCUMENTS/SCHOOL/essay.txt",
+    "type": "text",
+    "text": "СОЧИНЕНИЕ: ГОРОД БУДУЩЕГО\n\nВ будущем в каждой квартире будет компьютер. Люди будут писать друг другу письма за секунду. Больше никто не будет ждать у телефона.\n\nНаверное, от этого все станут меньше скучать.\n\n[На полях красным: «Алексей, интересная мысль. Но скучают не из-за скорости почты».]"
+  },
+  {
+    "path": "C:/DOCUMENTS/PERSONAL/list.txt",
+    "type": "text",
+    "text": "До полуночи:\n— хлеб (папа просил);\n— дописать окно;\n— вынести мусор;\n— сказать Ане что-нибудь нормальное;\n— не забыть выйти из дома.\n\nПоследний пункт обведён три раза."
+  },
+  {
+    "path": "C:/SYSTEM/system.ini",
+    "type": "text",
+    "text": "HOME OS 99\nUSER=LEX\nCLOCK_BATTERY=LOW\nLAST_SHUTDOWN=01.01.2000 00:08\n\nСистемные часы ненадёжны. Содержимое диска сохранено.\nСкрытые файлы: включаются в панели проводника."
+  },
+  {
+    "path": "C:/SYSTEM/terminal.exe",
+    "type": "app",
+    "text": "",
+    "app": "terminal"
+  },
+  {
+    "path": "C:/SYSTEM/.wallpaper.ini",
+    "type": "text",
+    "text": "Тема SUMMER_99 найдена. Тёплый вечер на крыше снова доступен в настройках.",
+    "hidden": true,
+    "secret": "theme"
+  },
+  {
+    "path": "C:/OLD_BACKUP/.constellation.txt",
+    "type": "text",
+    "text": "Карта нашего неба\n\nНе все звёзды видны сразу. Три яркие над антенной — наш выдуманный Маяк. В атласе его нет. И всё же мы всегда знали, куда смотреть.",
+    "hidden": true,
+    "secret": "stars"
+  },
+  {
+    "path": "C:/OLD_BACKUP/backup.log",
+    "type": "text",
+    "text": "28 декабря: резервная копия успешно создана.\n31 декабря, 23:47: питание нестабильно.\n1 января, 00:08: ручное выключение.\n\nПроверка диска: повреждённых секторов нет.\nНезавершённые дела: одно."
+  },
+  {
+    "path": "C:/PICTURES/roof.svg",
+    "type": "image",
+    "text": "",
+    "image": "roof.svg",
+    "caption": "18 августа 1999. Аня, Миша и Лёша. До последнего автобуса ещё целое лето."
+  },
+  {
+    "path": "C:/PICTURES/.cat.svg",
+    "type": "image",
+    "text": "",
+    "image": "cat.svg",
+    "hidden": true,
+    "secret": "cat",
+    "caption": "Пират. Системный администратор подоконника."
+  },
+  {
+    "path": "C:/DOWNLOADS/read_this.txt",
+    "type": "text",
+    "text": "Если увидишь значок дискеты — сохранись. Если увидишь друга — поздоровайся.\n\nРома, GameZone 99.\n\nP.S. У OldSearch есть запрос «будущее». Попробуй когда-нибудь."
+  },
+  {
+    "path": "C:/PROGRAMS/PostBox99.exe",
+    "type": "app",
+    "text": "",
+    "app": "mail"
+  },
+  {
+    "path": "C:/PROGRAMS/NetChat.exe",
+    "type": "app",
+    "text": "",
+    "app": "chat"
+  },
+  {
+    "path": "C:/PROGRAMS/RetroWeb.exe",
+    "type": "app",
+    "text": "",
+    "app": "browser"
+  },
+  {
+    "path": "C:/PROGRAMS/MediaPlayer99.exe",
+    "type": "app",
+    "text": "",
+    "app": "player"
+  },
+  {
+    "path": "C:/PROGRAMS/Notepad.exe",
+    "type": "app",
+    "text": "",
+    "app": "notepad"
+  },
+  {
+    "path": "C:/GAMES/Snake99.exe",
+    "type": "app",
+    "text": "",
+    "app": "snake"
+  },
+  {
+    "path": "C:/GAMES/Minefield.exe",
+    "type": "app",
+    "text": "",
+    "app": "minefield"
+  },
+  {
+    "path": "C:/MUSIC/01_Летний_двор.hseq",
+    "type": "music",
+    "text": "",
+    "track": 0
+  },
+  {
+    "path": "C:/MUSIC/02_Последний_автобус.hseq",
+    "type": "music",
+    "text": "",
+    "track": 1
+  },
+  {
+    "path": "C:/MUSIC/03_Пока_горит_окно.hseq",
+    "type": "music",
+    "text": "",
+    "track": 2
+  }
+]

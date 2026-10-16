@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
+const root=fileURLToPath(new URL('../',import.meta.url));
+function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
+const files=walk(root),scripts=files.filter(f=>f.endsWith('.js'));
+test('Every JavaScript file passes Node syntax validation',()=>{for(const file of scripts){const result=spawnSync(process.execPath,['--check',file],{encoding:'utf8'});assert.equal(result.status,0,result.stderr);}});
+test('Every static module import resolves, including beneath a repository subpath',()=>{for(const file of scripts){const code=fs.readFileSync(file,'utf8');for(const match of code.matchAll(/(?:from\s*|import\s*\()\s*['"](\.[^'"]+)['"]/g)){assert.ok(fs.existsSync(path.resolve(path.dirname(file),match[1])),file+': '+match[1]);const publicURL=new URL(path.relative(root,file),'https://example.test/my-repo/');assert.ok(new URL(match[1],publicURL).pathname.startsWith('/my-repo/'));}}});
+test('Entry page and all declared data assets exist locally',()=>{const html=fs.readFileSync(path.join(root,'index.html'),'utf8');for(const match of html.matchAll(/(?:src|href)="([^"]+)"/g)){assert.ok(!match[1].startsWith('/'));assert.ok(fs.existsSync(path.join(root,match[1])),match[1]);}const dataNames=['filesystem','emails','chats','story','websites'];for(const name of dataNames)JSON.parse(fs.readFileSync(path.join(root,'data',name+'.json'),'utf8'));const fsData=JSON.parse(fs.readFileSync(path.join(root,'data/filesystem.json'),'utf8'));for(const item of fsData.filter(i=>i.image))assert.ok(fs.existsSync(path.join(root,'assets/images',item.image)));for(const name of ['computer','folder','mail','chat','notepad','browser','player','games','recycle','settings','journal','image','archive','terminal'])assert.ok(fs.existsSync(path.join(root,'assets/icons',name+'.svg')));});
+test('Runtime has no mandatory remote requests, dependencies, or placeholder content',()=>{const runtime=files.filter(f=>/\.(js|html|css|json)$/.test(f)&&!f.includes(path.sep+'tests'+path.sep));for(const file of runtime){const text=fs.readFileSync(file,'utf8');assert.ok(!/fetch\s*\(\s*['"]https?:\/\//.test(text),file);assert.ok(!/https?:\/\/localhost/.test(text),file);assert.ok(!/Lorem ipsum|Coming Soon/i.test(text),file);}const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8'));assert.equal(Object.keys(pkg.dependencies||{}).length,0);});
